@@ -1,0 +1,244 @@
+:root {
+  --bg-color: #ffffff;
+  --first-font: "Epilogue";
+  --text-size: 17px;
+  --text-color: #2d2d2d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--first-font);
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  padding: 25px 50px;
+  font-size: 20px;
+  line-height: 30px;
+}
+nav img {
+  display: none;
+}
+nav .list {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  list-style: none;
+  padding: 26px 50px;
+}
+nav .list li {
+  list-style-type: none;
+}
+.list li a {
+  text-decoration: none;
+  color: var(--text-color);
+  line-height: 28px;
+}
+@media screen and (max-width: 768px) {
+  nav button {
+    border: none;
+    background-color: transparent;
+  }
+  nav img {
+    display: block;
+    padding: 28px 50px;
+  }
+  nav .list {
+    display: none;
+  }
+}
+
+.content {
+  display: flex;
+  padding: 100px;
+  align-items: center;
+}
+.content .content-text {
+  padding: 53.5px 28px 53.5px 0;
+}
+.content .content-text p:nth-of-type(1) {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+.content .content-text h3 {
+  font-size: 80px;
+  line-height: 90px;
+  margin-bottom: 40px;
+}
+.content-text span {
+  display: none;
+}
+.content .content-text p:nth-of-type(2) {
+  line-height: 27px;
+}
+.content img {
+  flex-basis: 60%;
+}
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .content .content-text {
+    padding: 50px 30px;
+    text-align: center;
+  }
+  .content-text span {
+    display: block;
+  }
+  .content .content-text p:nth-of-type(2) {
+    display: none;
+  }
+  .content img {
+    padding: 60px 30px;
+    width: 100%;
+    height: 270px;
+  }
+}
+.design {
+  display: flex;
+  flex-direction: row;
+  gap: 125px;
+  padding: 180px 140.5px;
+}
+
+.design .child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.design .child img {
+  width: 130px;
+  height: 130px;
+  margin-bottom: 56px;
+}
+.design .child span {
+  line-height: 42px;
+  font-size: 27px;
+}
+.design .child p {
+  line-height: 27px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .design {
+    flex-direction: column;
+    padding: 0;
+  }
+  .child {
+    padding: 150px 62.55px 150px 62.5px;
+    flex-grow: 1;
+  }
+}
+
+.work h3 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.list-work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 122px 20px 100px 100px;
+  gap: 67.5px;
+  border-bottom: 2px solid #cccc;
+}
+
+.list-work .child-work {
+  width: calc(33.33% - 67.5px);
+}
+.child-work h4 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  line-height: 30px;
+  font-size: 20px;
+}
+.child-work span {
+  line-height: 27px;
+}
+@media screen and (max-width: 768px) {
+  .list-work .child-work {
+    width: auto;
+  }
+  .work h3 {
+    margin: 0;
+    padding: 40px 92px 60px 92px;
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .list-work {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 0;
+  }
+}
+
+footer {
+  display: flex;
+  padding: 70px 100px;
+  gap: 190px;
+}
+.footer-text {
+  flex: 3;
+}
+.footer-text h3 {
+  font-size: 32px;
+  line-height: 42px;
+  margin-bottom: 40px;
+}
+.footer-text p {
+  line-height: 27px;
+  margin-bottom: 60px;
+}
+.icon i {
+  margin-right: 20px;
+  font-size: 32px;
+}
+.footer-form {
+  flex: 5;
+}
+.footer-form input {
+  display: block;
+  width: 100%;
+  height: 80px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #f3f3f3;
+}
+.footer-form textarea {
+  background-color: #f3f3f3;
+  border: none;
+  width: 100%;
+  padding-left: 30px;
+  padding-top: 21px;
+  margin-bottom: 40px;
+}
+.footer-form button {
+  color: #ffff;
+  background-color: #2d2d2d;
+  width: 235px;
+  height: 80px;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    padding: 70px 30px;
+    gap: 80px;
+  }
+  .footer-text h3 {
+    margin-bottom: 40px;
+  }
+  .footer-text p {
+    margin-bottom: 60px;
+  }
+}
